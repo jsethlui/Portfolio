@@ -27,7 +27,8 @@
     <link rel="stylesheet" href="../../styles/scrollbar.css">
 
     <!-- scripts -->
-    <script src="../../index.js"></script>
+    <!-- <script src="../../index.js"></script> -->
+    <script src="./about.js"></script>
 </head>
 <body>
     <div class="entire_bar" id="entire_bar">
@@ -61,15 +62,15 @@
     <!-- skills -->
     <section class="about_skills">
         <div class="categories">
-            <p>TECH SKILLS</p>
+            <p onclick="slideIn()">TECH SKILLS</p>
             <p>HOBBIES</p>
         </div>
 
         <div class="tech_skills">
-            <div class="programming">
+            <div class="programming" id="programming1">
                 <div class="row">
                     <div class="col">
-                        <p class="tech_title">LANGUAGES</p>
+                        <p class="tech_title"><i class="uil uil-laptop"></i> LANGUAGES</p>
                         <hr class="bar">
                         <p class="tech_list">
                             Python<br>
@@ -77,23 +78,25 @@
                             Swift<br>
                             Java<br>
                             Bash<br>
-                            Git<br>
-                            GDB<br>
                             HTML, CSS, Javascript<br>
                         </p>
                     </div>
 
                     <div class="col">
-                        <p class="tech_title">INTERESTS</p>
+                        <p class="tech_title"><i class="uil uil-code-branch"></i> SKILLS</p>
                         <hr class="bar">
                         <p class="tech_list">
-                            Software Development<br>
-                            UX Design<br>
+                            GDB<br>
+                            Git<br>
+                            HTTP Requests<br>
+                            Google Firebase<br>
+                            BeagleBone<br>
+                            Matlab<br>
                         </p>
                     </div>
 
                     <div class="col">
-                        <p class="tech_title">COURSEWORK</p>
+                        <p class="tech_title"><i class="uil uil-book-open"></i> COURSEWORK</p>
                         <hr class="bar">
                         <p class="tech_list">
                             Operating Systems<br>
@@ -102,7 +105,6 @@
                             (Math) Algorithms<br>
                             Applied Numerical Methods<br>
                             Linear Algebra and Differentials<br>
-                            Symbolic Logic<br>
                         </p>
                     </div>
                 </div> <!-- end of row -->
