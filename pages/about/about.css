@@ -61,8 +61,8 @@ body {
     margin-right: auto;
 
     /* dimensions */
-    height: auto;
-    width: 100%;
+    height: 393px;
+    width: 393px;
 }
 
 .summary {
@@ -122,16 +122,25 @@ body {
     cursor: pointer;
 }
 
-.programming {
-/*    visibility: visible;
-    left: 100%;*/
-
-    /*opacity: 0;*/
+.tech_skills, .hobby_skills {
     position: absolute;
-    left: -100%;
+    left: 0%;
+    width: 100%;
+    z-index: 0;
+    text-align: center;
 }
 
-.tech_title {
+.tech_skills {
+    /*opacity: 0;*/
+    /*left: -100%;*/
+}
+
+.hobby_skills {
+    opacity: 0;
+    /*right: 100%;*/
+}
+
+.title {
     text-align: center;
     font-size: 20px;
     letter-spacing: 1.5px;
@@ -139,12 +148,12 @@ body {
 }
 
 .bar {
-    width: 185px;
+    width: 175px;
     margin-top: -5px;
     margin-bottom: -5px;
 }
 
-.tech_list {
+.list {
     float: left;
     text-align: center;
 
