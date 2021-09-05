@@ -75,15 +75,15 @@ a:hover {
     left: -100%;
     background-color: rgb(100, 190, 121); 
 
-    -moz-animation: slide 1s forwards;
-    -webkit-animation: slide 1s forwards;
-    -o-animation: slide 1s forwards;
-    animation: slide 1s forwards;
+    -moz-animation: slide 0.5s forwards;
+    -webkit-animation: slide 0.5s forwards;
+    -o-animation: slide 0.5s forwards;
+    animation: slide 0.5s forwards;
 
-    -moz-animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-    -o-animation-delay: 1s;
-    animation-delay: 1s;
+    -moz-animation-delay: 0.75s;
+    -webkit-animation-delay: 0.75s;
+    -o-animation-delay: 0.75s;
+    animation-delay: 0.75s;
 }
 
 .intro {
@@ -110,10 +110,10 @@ a:hover {
     font-size: 20px;
 
     opacity: 0;
-    -moz-animation-delay: 0.5;
-    -webkit-animation-delay: 0.5s;
-    -o-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 .greeting2 {
@@ -124,10 +124,10 @@ a:hover {
     font-size: 42px;
 
     opacity: 0;
-    -moz-animation-delay: 0.75;
-    -webkit-animation-delay: 0.75s;
-    -o-animation-delay: 0.75s;
-    animation-delay: 0.75s;
+    -moz-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.s;
+    -o-animation-delay: 1.5s;
+    animation-delay: 1.5s;
 }
 
 .greeting3 {
@@ -138,10 +138,10 @@ a:hover {
     font-size: 20px;
 
     opacity: 0;
-    -moz-animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-    -o-animation-delay: 1s;
-    animation-delay: 1s;
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
 }
 
 .about_link {
@@ -159,6 +159,17 @@ a:hover {
     border-style: solid;
     border-width: 3;
     border-color: rgb(100, 190, 121); 
+
+    opacity: 0;
+    -moz-animation: fade_in 0.75s forwards;
+    -webkit-animation: fade_in 0.75s forwards;
+    -o-animation: fade_in 0.75s forwards;
+    animation: fade_in 0.75s forwards;
+
+    -moz-animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+    -o-animation-delay: 2.5s;
+    animation-delay: 2.5s;
 }
 
 body {
