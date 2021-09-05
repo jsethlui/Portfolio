@@ -13,10 +13,14 @@
 }
 
 .navigation_container {
+    /* positioning */
     position: absolute;
     top: 0px;
     width: 100%;
     height: 100px;
+
+    /* styling */
+    /*background-color: yellow;*/
 }
 
 .pages_container {
@@ -25,6 +29,10 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
+}
+
+.pages_container a {
+    color: black;
 }
 
 /* Animate an underline on hover */

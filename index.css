@@ -12,6 +12,19 @@
     }
 }
 
+a {
+    color: rgb(100, 190, 121); 
+    filter:  brightness(1.5);
+    opacity: 1;
+    transition: 0.3s;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.75;
+}
+
 .entire_bar {
     width: 100%;
     background-color: white;
@@ -23,30 +36,57 @@
     background-color: rgb(100, 190, 121); 
 }
 
+.intro_section {
+    /* positiong */
+    position: relative;
+    height: 150vh;
+
+    /* styling */
+    /*background-color: blue;*/
+    color: white;
+}
+
 .spine {
     /* positioning and framing */
-    position: fixed;
-    bottom: 0px;
-    left: 225px;
     display: left;
     justify-content: flex-start;
 
     /* styling */
-    height: 325px;
+    /*height: 225px;*/
     width: 2.5px;
     background-color: rgb(100, 190, 121); 
 }
 
-.circle {
-    position: fixed;
-    bottom: 324px;
-    left: 222px;
+.intro {
+    position: absolute;
+    display: flex;
+    top: 25%;
+    left: 10%;
+    letter-spacing: 1.5px;
+    height: 235px;
+}
 
-    /* styling */
-    height: 9px;
-    width: 9px;
-    border-radius: 50%;
-    background-color: rgb(100, 190, 121); 
+.greeting1 {
+    position: relative;
+    top: 1.5rem;
+    left: 25%;
+    font-size: 20px;
+}
+
+.greeting2 {
+    /* positioning */
+    position: absolute;
+    left: 25%;
+    width: 250px;
+    font-size: 42px;
+}
+
+.greeting3 {
+    position: absolute;
+    left: 25%;
+    top: 7rem;
+    width: 225%;
+    font-size: 20px;
 }
 
 body {
@@ -55,28 +95,13 @@ body {
     margin: 0px;
 
     /* font styling */
-/* styling */
-    font-family: proxima-nova, sans-serif;
-    color: rgba(51, 51, 51);
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 500;
+    color: white;
 
     /* background styling */
-    background-color: white;
+    background-color: rgb(17, 19, 22);
     overflow-x: hidden;
-}
 
-.content {
-    /* positioning */
-    margin-top: 200px;
-    margin-left: 150px;
-    margin-right: 150px;
-
-    /* animation */
-    opacity: 0;
-    animation: fade_in 1.75s forwards;
-    animation-delay: 0.75s;
-}
-
-.intro {
-    text-decoration: center;
-    background-color: yellow;
+    /* animations */
 }
