@@ -9,22 +9,22 @@ function loadBar() {
     var i = 0;
     if (i == 0) {
       i = 1;
-      var element = document.getElementById("entire_bar");
-      var width = 1;
+      var element = document.getElementById("spine");
+      var height = 1;
       var id = setInterval(function() {
-          if (width >= 100) {
+          if (height >= 100) {
               clearInterval(id);
               i = 0;
-          } else if (width < 30) {
-              width += 3;
-              element.style.width = width + "%";
+          } else if (height < 55) {
+              height += 4;
+              element.style.height = height + "%";
           } else {
-              width += 2;
-              element.style.width = width + "%";
+              height += 4;
+              element.style.height = height + "%";
           }
 
           // if done loading, make progress bar disappear
-          if (width > 100) {
+          if (height > 100) {
               // document.getElementById("entire_bar").style.visibility = "hidden";
               fadeOut();
           }

@@ -18,9 +18,6 @@
     top: 0px;
     width: 100%;
     height: 100px;
-
-    /* styling */
-    /*background-color: yellow;*/
 }
 
 .pages_container {
@@ -32,7 +29,7 @@
 }
 
 .pages_container a {
-    color: black;
+    color: rgb(100, 190, 121); ;
 }
 
 /* Animate an underline on hover */
@@ -44,7 +41,7 @@
     bottom: -1px;
 
     left: 0;
-    background-color: black;
+    background-color: rgb(100, 190, 121); ;
     opacity: 1;
     visibility: hidden;
     transform: scaleX(0);
@@ -63,7 +60,7 @@
     margin-bottom: 0px;
 
     /* font styling */
-    color: black;
+    color: rgb(100, 190, 121); ;
     font-size: 18px;
     letter-spacing: 1.5px;
     opacity: 0;
