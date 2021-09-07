@@ -26,23 +26,23 @@ function loadBar() {
           // if done loading, make progress bar disappear
           if (height > 100) {
               // document.getElementById("entire_bar").style.visibility = "hidden";
-              fadeOut();
+              // fadeOut();
           }
       }, 10);
       
     } 
 } 
 
-function fadeOut() {
-    var element = document.getElementById("entire_bar");
-    var fadeEffect = setInterval(function() {
-        if (!element.style.opacity) {
-            element.style.opacity = 1;
-        }
-        if (element.style.opacity > 0) {
-            element.style.opacity -= 0.01;
-        } else {
-            clearInterval(fadeEffect);
-        }
-    }, 25);
-}
+// function fadeOut() {
+//     var element = document.getElementById("entire_bar");
+//     var fadeEffect = setInterval(function() {
+//         if (!element.style.opacity) {
+//             element.style.opacity = 1;
+//         }
+//         if (element.style.opacity > 0) {
+//             element.style.opacity -= 0.01;
+//         } else {
+//             clearInterval(fadeEffect);
+//         }
+//     }, 25);
+// }

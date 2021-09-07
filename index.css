@@ -12,7 +12,7 @@
     }
 }
 
-@-webkit-keyframes {
+@-webkit-keyframes fade_in {
     from {
         opacity: 0;
         transform: rotateX(-10deg);
@@ -34,7 +34,7 @@
 
 a {
     color: rgb(100, 190, 121); 
-    filter:  brightness(1.75);
+    filter:  brightness(1.5);
     opacity: 1;
     transition: 0.3s;
     font-weight: 600;
@@ -54,15 +54,6 @@ a:hover {
     height: 5px;
     background-color: rgb(100, 190, 121); 
 }*/
-
-.intro_section {
-    /* positiong */
-    position: relative;
-    height: 150vh;
-
-    /* styling */
-    color: white;
-}
 
 .spine {
     /* positioning and framing */
@@ -84,6 +75,15 @@ a:hover {
     -webkit-animation-delay: 0.75s;
     -o-animation-delay: 0.75s;
     animation-delay: 0.75s;
+}
+
+.intro_section {
+    /* positiong */
+    position: relative;
+    height: 150vh;
+
+    /* styling */
+    color: white;
 }
 
 .intro {
