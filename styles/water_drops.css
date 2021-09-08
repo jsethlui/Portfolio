@@ -1,93 +1,16 @@
 
-.water_drops {
-    position: absolute;
-    display: flex;
-    left: 75%;
-    width: auto;
-    /*background-color: rgb(17, 19, 22);*/
-    /*background-color: yellow;*/
+/* https://codepen.io/abehjat/pen/oXMENv */
+
+@keyframes drip {
+    to {
+        top: 550px;
+    }
 }
 
-.drop {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    top: -30px;
-    margin: 0 auto;
-    background: #FFF;
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
-    -moz-animation-name: drip;
-    -webkit-animation-name: drip;
-    animation-name: drip;
-    -moz-animation-timing-function: cubic-bezier(1,0,.91,.19);
-    -webkit-animation-timing-function: cubic-bezier(1,0,.91,.19);
-    animation-timing-function: cubic-bezier(1,0,.91,.19);
-    -moz-animation-duration: 2s;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-}
-
-.drop:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 30px solid rgba(255,255,255,1);
-    top: -22px;
-}
-
-.wave {
-    position: relative;
-    opacity: 0;
-    top: 0;
-    width: 2px;
-    height: 1px;
-    border: #FFF 7px solid;
-    -moz-border-radius: 300px / 150px;
-    -webkit-border-radius: 300px / 150px;
-    border-radius: 300px / 150px;
-    -moz-animation-name: ripple;
-    -webkit-animation-name: ripple;
-    animation-name: ripple;
-    -moz-animation-delay: 2s;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-    -moz-animation-duration: 2s;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-}
-
-.wave:after {
-    content: "";
-    position: absolute;
-    opacity: 0;
-    top: -5px;
-    left: -5px;
-    width: 2px;
-    height: 1px;
-    border: #FFF 5px solid;
-    -moz-border-radius: 300px / 150px;
-    -webkit-border-radius: 300px / 150px;
-    border-radius: 300px / 150px;
-    -moz-animation-name: ripple-2;
-    -webkit-animation-name: ripple-2;
-    animation-name: ripple-2;
-    -moz-animation-duration: 2s;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
+@-webkit-keyframes drip {
+    to {
+        top: 550px;
+    }  
 }
 
 @keyframes ripple {
@@ -119,8 +42,87 @@
   }
 }
 
-@keyframes drip {
-    to {
-      top: 190px;
-    }
+.water_drops {
+    /* positioning */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 100%;
+    width: 50%;
+
+    /* styling */
+    overflow: hidden;
+    /*background-color: yellow;*/
+}
+
+.drop {
+    /* positioning */
+    position: relative;
+    top: -20px;
+    width: 10px;
+    height: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* styling */
+    background-color: white;
+    border-radius: 20px;
+
+    /* animations */
+    animation-name: drip;
+    animation-timing-function: cubic-bezier(1, 0, 0.91, 0.19);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.drop:before {
+    /* positioning */
+    position: absolute;
+    top: -12px;
+    width: 0;
+    height: 0;
+    content: "";
+
+    /* styling */
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 15px solid white;
+}
+
+.wave {
+    /* positioning */
+    position: relative;
+    opacity: 0;
+    top: 0;
+    width: 2px;
+    height: 1px;
+
+    /* styling */
+    border: white 7x solid;
+    border-radius: 300px / 150px;
+
+    /* animations */
+    animation-name: ripple;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.wave:after {
+    /* positioning */
+    position: absolute;
+    opacity: 0;
+    top: -5px;
+    left: -5px;
+    width: 2px;
+    height: 1px;
+
+    /* styling */
+    border: #FFF 5px solid;
+    border-radius: 300px / 150px;
+
+    /* animations */
+    animation-name: ripple-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }

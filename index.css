@@ -25,11 +25,15 @@
 }
 
 @keyframes slide {
-    100% { left: 0%; }
+    100% {
+        left: 0%;
+    }
 }
 
 @-webkit-keyframes {
-    100% { left: 0%; }
+    100% {
+        left: 0%;
+    }
 }
 
 a {
@@ -79,20 +83,16 @@ a:hover {
 
 .intro_section {
     /* positiong */
-    position: relative;
-    height: 150vh;
-
-    /* styling */
-    color: white;
+    min-height: 50rem;
 }
 
 .intro {
     position: absolute;
     display: flex;
-    top: 25%;
+    top: 40%;
     left: 10%;
     letter-spacing: 1.5px;
-    height: 285px;
+    height: 235px;
 }
 
 .greeting {
@@ -110,16 +110,16 @@ a:hover {
     font-size: 20px;
 
     opacity: 0;
-    -moz-animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-    -o-animation-delay: 1s;
-    animation-delay: 1s;
+    -moz-animation-delay: 0.75s;
+    -webkit-animation-delay: 0.75s;
+    -o-animation-delay: 0.75s;
+    animation-delay: 0.75s;
 }
 
 .greeting2 {
     /* positioning */
     position: absolute;
-    left: 25%;
+    left: 23%;
     width: 250px;
     font-size: 42px;
 
@@ -172,9 +172,45 @@ a:hover {
     animation-delay: 2.5s;
 }
 
+.project_section {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.project_section h2 {
+    /* positioning */
+    position: relative;
+
+    /* styling */
+    font-size: 42px;
+    letter-spacing: 3.5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+} 
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
 body {
     /* dimensions */
     margin: 0px;
+    height: 2000px;
 
     /* font styling */
     font-family: 'Darker Grotesque', sans-serif;
