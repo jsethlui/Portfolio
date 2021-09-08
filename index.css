@@ -36,7 +36,7 @@
     }
 }
 
-a {
+.intro a {
     color: rgb(100, 190, 121); 
     filter:  brightness(1.5);
     opacity: 1;
@@ -45,7 +45,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+.intro a:hover {
     opacity: 0.75;
 }
 
@@ -144,6 +144,25 @@ a:hover {
     animation-delay: 2s;
 }
 
+.external_links {
+    position: absolute;
+    left: 25%;
+    top: 12rem;
+    width: 225%;
+    font-size: 20px;
+
+    opacity: 0;
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.external_links a {
+    color: white;
+    padding-right: 30px;
+}
+
 .about_link {
     /* positioning */
     position: absolute;
@@ -173,10 +192,15 @@ a:hover {
 }
 
 .project_section {
+    /* positioning */
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    /* styling */
+    min-height: 75vh;
+    background-color: rgb(18, 20, 23);;
 }
 
 .project_section h2 {
@@ -193,6 +217,7 @@ a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    background-color: yellow;
 } 
 
 .col {
@@ -201,10 +226,10 @@ a:hover {
     flex-basis: 100%;
     flex: 1;
 
-    margin-top: 0px;
+/*    margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 35px;
-    margin-right: 35px;
+    margin-right: 35px;*/
 }
 
 body {

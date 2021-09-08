@@ -1,0 +1,33 @@
+
+@keyframes slide_down {
+    to {
+        top: 25px;
+    }
+}
+
+.navigation_container {
+    /* positioning */
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+
+.navigation_container i {
+    /* positioning */
+    position: absolute;
+    top: -50px;
+    right: 25px;
+    font-size: 32px;
+
+    /* styling */
+    cursor: pointer;
+
+    /* animations */
+    transition: 0.3s;
+    animation: slide_down 0.5s forwards;
+    animation-delay: 1.5s;
+}
+
+.navigation_container i:hover {
+    opacity: 0.85;
+}
