@@ -9,9 +9,6 @@
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport"/>
     <title>Jeremy Louie</title>
 
-    <!-- fonts -->
-    <!-- <link rel="stylesheet" href="https://use.typekit.net/pna0oaz.css"> -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,11 +19,13 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./styles/water_drops.css">
     <link rel="stylesheet" href="./styles/navigation_bar.css">
+    <link rel="stylesheet" href="./styles/hamburgers.css">
     <link rel="stylesheet" href="./styles/menu_bar.css">
     <link rel="stylesheet" href="./styles/scrollbar.css">
 
     <!-- scripts -->
     <script src="./index.js"></script>
+    <script src="./scripts/menu_bar.js" async></script>
 </head>
 <body>
 <!--     <div class="entire_bar" id="entire_bar">
@@ -46,8 +45,17 @@
     </nav> -->
 
     <nav class="navigation_container">
-        <i onclick="show_menu()" class="uil uil-list-ul"></i>
-        <div class="">
+        <!-- <i onclick="toggleMenuBar()" class="uil uil-list-ul"></i> -->
+        <button class="hamburger hamburger--spin" type="button" onclick="toggleMenuBar()">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="menu" id="menu">
+            <p>About</p>
+            <p>Work</p>
+            <p>Resume</p>
+            <p>Contact</p>
         </div>
     </nav>
 
