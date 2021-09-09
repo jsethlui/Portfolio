@@ -64,11 +64,53 @@
     justify-content: flex-start;
 
     /* styling */
-    width: 2.5px;
+    width: 3px;
     height: 100%;
     position: absolute;
     left: -100%;
     background-color: rgb(100, 190, 121); 
+
+    -moz-animation: slide 0.5s forwards;
+    -webkit-animation: slide 0.5s forwards;
+    -o-animation: slide 0.5s forwards;
+    animation: slide 0.5s forwards;
+
+    -moz-animation-delay: 0.75s;
+    -webkit-animation-delay: 0.75s;
+    -o-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+}
+
+.spine:before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    top: -2px;
+    position: absolute;
+    border-radius: 1.5px;
+    background-color: rgb(100, 190, 121); ;
+    /*background-color: blue;*/
+
+    -moz-animation: slide 0.5s forwards;
+    -webkit-animation: slide 0.5s forwards;
+    -o-animation: slide 0.5s forwards;
+    animation: slide 0.5s forwards;
+
+    -moz-animation-delay: 0.75s;
+    -webkit-animation-delay: 0.75s;
+    -o-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+}
+
+.spine:after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    top: 267px;
+    position: absolute;
+    border-radius: 1.5px;
+    background-color: rgb(100, 190, 121); ;
+    /*background-color: blue;*/
 
     -moz-animation: slide 0.5s forwards;
     -webkit-animation: slide 0.5s forwards;
@@ -200,7 +242,7 @@
 
     /* styling */
     min-height: 75vh;
-    background-color: rgb(18, 20, 23);;
+    background-color: rgb(18, 20, 27); /* 23 */
 }
 
 .project_section h2 {
@@ -209,7 +251,7 @@
 
     /* styling */
     font-size: 42px;
-    letter-spacing: 3.5px;
+    letter-spacing: 3px;
 }
 
 .row {
@@ -217,7 +259,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    background-color: yellow;
+    /*background-color: yellow;*/
 } 
 
 .col {
