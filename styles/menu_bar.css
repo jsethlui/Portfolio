@@ -5,6 +5,22 @@
     }
 }
 
+@keyframes dropdown {
+    to {
+        top: 0px;
+    }
+}
+
+@keyframes riseup {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: -425px;
+    }
+}
+
 .navigation_container {
     /* positioning */
     position: absolute;
@@ -12,15 +28,17 @@
     height: 100px;
 }
 
-.navigation_container i {
+.navigation_container button {
     /* positioning */
     position: absolute;
-    top: -50px;
+    /*top: -50px;*/
+    top: 25px;  /* this is temporary */
     right: 25px;
     font-size: 32px;
 
     /* styling */
     cursor: pointer;
+    font: white;
 
     /* animations */
     transition: 0.3s;
@@ -30,4 +48,69 @@
 
 .navigation_container i:hover {
     opacity: 0.85;
+}
+
+.menu {
+    /* positioning */
+    position: absolute;
+    top: -425px;
+    right: 25px;
+    height: 225px;
+    width: 135px;
+    padding-top: 100px;
+
+    /* styling */
+    text-align: right;
+    display: none;
+    opacity: 0.75;
+    background: rgb(54, 54, 58);
+
+    /* animations */
+    animation-name: riseup;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+.menu::after {
+    /* positioning */
+    content: "";
+    position: absolute;
+    top: 215px;
+    right: 0px;
+    height: 200px;
+    width: 135px;
+    z-index: -1;
+
+    /* styling */
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 100px;
+    background: rgb(54, 54, 58);
+}
+
+.menu_visible {
+    /* animations */
+    animation-name: dropdown;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+.menu a {
+    /* positioning */
+    padding-top: 25px;
+    padding-right: 15px;
+    display: block;
+
+    /* styling */
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+
+    /* animation */
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    opacity: 0.75;
 }
