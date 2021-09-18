@@ -1,24 +1,15 @@
 
 @keyframes slide_down {
-    to {
-        top: 25px;
-    }
+    to {top: 25px;}
 }
 
-@keyframes dropdown {
-    to {
-        top: 0px;
-    }
+@keyframes slide_in {
+    to {right: 25px;}
 }
 
-@keyframes riseup {
-    from {
-        top: 0px;
-    }
-
-    to {
-        top: -425px;
-    }
+@keyframes slide_out {
+    from {right: 25px;}
+    to {right: -100px;}
 }
 
 .navigation_container {
@@ -53,44 +44,26 @@
 .menu {
     /* positioning */
     position: absolute;
-    top: -425px;
-    right: 25px;
+    /*top: -425px;*/
+    right: -100px;
     height: 225px;
     width: 135px;
-    padding-top: 100px;
+    padding-top: 75px;
 
     /* styling */
     text-align: right;
     display: none;
-    opacity: 0.75;
-    background: rgb(54, 54, 58);
 
     /* animations */
-    animation-name: riseup;
-    animation-duration: 0.75s;
+    animation-name: slide_out;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-}
-
-.menu::after {
-    /* positioning */
-    content: "";
-    position: absolute;
-    top: 215px;
-    right: 0px;
-    height: 200px;
-    width: 135px;
-    z-index: -1;
-
-    /* styling */
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 100px;
-    background: rgb(54, 54, 58);
 }
 
 .menu_visible {
     /* animations */
-    animation-name: dropdown;
-    animation-duration: 0.75s;
+    animation-name: slide_in;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 
