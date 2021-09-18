@@ -14,17 +14,17 @@ body {
     overflow-x: hidden;
 }
 
-.hamburger--spring {
+.hamburger--stand {
     z-index: 99;
 }
 
 /* open hamburger */
-.hamburger--spring .hamburger-inner::before, .hamburger--spring .hamburger-inner, .hamburger--spring .hamburger-inner::after {
+.hamburger--stand .hamburger-inner::before, .hamburger--stand .hamburger-inner, .hamburger--stand .hamburger-inner::after {
     background: white;
 }
 
 /* close hamburger */
-.hamburger--spring.is-active .hamburger-inner::before, .hamburger--spring.is-active .hamburger-inner::after {
+.hamburger--stand.is-active .hamburger-inner::before, .hamburger--stand.is-active .hamburger-inner::after {
     background: white;
 }
 
