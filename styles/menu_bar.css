@@ -5,6 +5,22 @@
     }
 }
 
+@keyframes dropdown {
+    to {
+        top: 0px;
+    }
+}
+
+@keyframes riseup {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: -425px;
+    }
+}
+
 .navigation_container {
     /* positioning */
     position: absolute;
@@ -16,7 +32,7 @@
     /* positioning */
     position: absolute;
     /*top: -50px;*/
-    top: 25px; /* this is temporary */
+    top: 25px;  /* this is temporary */
     right: 25px;
     font-size: 32px;
 
@@ -25,9 +41,9 @@
     font: white;
 
     /* animations */
-/*    transition: 0.3s;
+    transition: 0.3s;
     animation: slide_down 0.5s forwards;
-    animation-delay: 1.5s;*/
+    animation-delay: 1.5s;
 }
 
 .navigation_container i:hover {
@@ -37,31 +53,61 @@
 .menu {
     /* positioning */
     position: absolute;
-    top: 75px;
+    top: -425px;
     right: 25px;
-    height: 100rem;
-    width: 150px;
+    height: 225px;
+    width: 135px;
+    padding-top: 100px;
 
     /* styling */
     text-align: right;
     display: none;
-    background: yellow;
+    opacity: 0.75;
+    background: rgb(54, 54, 58);
+
+    /* animations */
+    animation-name: riseup;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+.menu::after {
+    /* positioning */
+    content: "";
+    position: absolute;
+    top: 215px;
+    right: 0px;
+    height: 200px;
+    width: 135px;
+    z-index: -1;
+
+    /* styling */
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 100px;
+    background: rgb(54, 54, 58);
+}
+
+.menu_visible {
+    /* animations */
+    animation-name: dropdown;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
 }
 
 .menu a {
     /* positioning */
-    margin-top: 25px;
-    /*padding-top: 25px;*/
-    padding-bottom: 0px;
+    padding-top: 25px;
     padding-right: 15px;
+    display: block;
 
-    /* font styling */
+    /* styling */
     color: white;
     font-size: 24px;
     font-weight: 500;
     letter-spacing: 2px;
     text-decoration: none;
 
+    /* animation */
     transition: 0.5s;
 }
 

@@ -248,10 +248,14 @@
 .project_section h2 {
     /* positioning */
     position: relative;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 
     /* styling */
     font-size: 42px;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 .row {
@@ -263,28 +267,77 @@
 } 
 
 .col {
+    /* positioning */
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
 
-/*    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 35px;
-    margin-right: 35px;*/
+    /* dimensions */
+    margin-left: 25px;
+    margin-right: 25px;
+
+    /* styling */
+    text-align: center;
 }
 
-body {
-    /* dimensions */
-    margin: 0px;
-    height: 2000px;
-
-    /* font styling */
-    font-family: 'Darker Grotesque', sans-serif;
-    font-weight: 500;
+.col a {
     color: white;
+    text-decoration: none;
+}
 
-    /* background styling */
-    background-color: rgb(17, 19, 22);
-    overflow-x: hidden;
+.col img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.col h2 {
+    font-size: 22px;
+    letter-spacing: 1.25px;
+}
+
+.container {
+    position: relative;
+}
+
+.overlay {
+    /* positioning */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+
+    /* styling */
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(100, 190, 121); 
+    filter: brightness(1.5);
+}
+
+.container:hover .overlay {
+    /* opacity on hover */
+    opacity: 0.75;
+}
+
+.overlay p {
+    /* font styling */
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 2.5vw;
+
+    /* text styling */
+    margin: 0;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 99;
 }

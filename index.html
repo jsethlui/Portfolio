@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./styles/hamburgers.css">
     <link rel="stylesheet" href="./styles/menu_bar.css">
     <link rel="stylesheet" href="./styles/scrollbar.css">
+    <link rel="stylesheet" href="./styles/global.css">
 
     <!-- scripts -->
     <script src="./index.js"></script>
@@ -32,26 +33,14 @@
         <div class="load_bar"></div>
     </div> -->
 
-<!--     <nav class="navigation_container">
-        <div class="pages_container">
-            <a class="navigation_link" href="./pages/about/about.html">ABOUT</a>
-            <a class="navigation_link" href="./pages/work.html">PROJECTS</a>
-            <a class="navigation_link" href="./pages/about.html">RESUME</a>
-
-            <a class="navigation_link" href="https://www.linkedin.com/in/jeremylouie98/" target="_blank" rel="noopener noreferrer"><i class="uil uil-linkedin"></i></a>
-            <a class="navigation_link" href="https://github.com/jsethlui" target="_blank" rel="noopener noreferrer"><i class="uil uil-github"></i></a>
-            <a class="navigation_link" href="./pages/about.html" target="_blank" rel="noopener noreferrer"><i class="uil uil-envelope"></i></a>
-        </div>
-    </nav> -->
-
     <nav class="navigation_container">
         <!-- <i onclick="toggleMenuBar()" class="uil uil-list-ul"></i> -->
-        <button class="hamburger hamburger--spin" type="button" onclick="toggleMenuBar()">
+        <button class="hamburger hamburger--spring" type="button" onclick="toggleMenuBar()">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
         </button>
-        <div class="menu" id="menu">
+        <div class="menu">
             <a href="">About</a>
             <a href="">Work</a>
             <a href="">Resume</a>
@@ -79,12 +68,21 @@
     </section>
 
     <section class="project_section">
-        <h2>Featured Projects</h2>
+        <h2>Featured Work</h2>
         
         <div class="row">
             <!-- SCaR -->
             <div class="col">
-                <p>project1</p>
+                <a href="./scar/scar.html">
+                    <h2>Pocket Racers</h2>
+                    <div class="container">
+                        <img src="./assets/index/machine.gif" alt="pocket racer website">
+                        <div class="overlay">
+                            <p>Explore</p>
+                        </div>
+                    </div>
+                </a>
+                <p>Pocket Racers focuses on making 1:28 scaled-down autonomous RC cars accessible to <b class="bold">all</b> UCLA undergraduate students. Check out my roles as a Website Developer and Researcher on Pocket Racers</p>
             </div>
 
             <!-- Runge Kutta method -->

@@ -1,18 +1,14 @@
 
-// Look for .hamburger
-var hamburger = document.querySelector(".hamburger");
+var hamburger = document.querySelector(".hamburger")
 hamburger.addEventListener("click", function() {
-    // Toggle class "is-active"
-    hamburger.classList.toggle("is-active");
-});
+    hamburger.classList.toggle("is-active")
+})
 
 function toggleMenuBar() {
-    // Look for .hamburger
-    var hamburger = document.querySelector(".hamburger");
-    var mobilePageContainer = document.getElementById("menu")
-
+    var mobilePageContainer = document.querySelector(".menu")
+    mobilePageContainer.classList.toggle("menu_visible")
     if (mobilePageContainer.style.display === "block") {
-        mobilePageContainer.style.display = "none"
+        // do nothing
     } else {    // if menu bar selected
         mobilePageContainer.style.display = "block"
     }
