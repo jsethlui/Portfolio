@@ -3,13 +3,26 @@
     to {top: 25px;}
 }
 
+@-webkit-keyframes slide_down {
+    to {top: 25px;}
+}
+
 @keyframes slide_in {
+    to {right: 25px;}
+}
+
+@-webkit-keyframes slide_in {
     to {right: 25px;}
 }
 
 @keyframes slide_out {
     from {right: 25px;}
-    to {right: -100px;}
+    to {right: -150px;}
+}
+
+@-webkit-keyframes slide_out {
+    from {right: 25px;}
+    to {right: -150px;}
 }
 
 .navigation_container {
@@ -22,8 +35,7 @@
 .navigation_container button {
     /* positioning */
     position: absolute;
-    /*top: -50px;*/
-    top: 25px;  /* this is temporary */
+    top: 25px;
     right: 25px;
     font-size: 32px;
 
@@ -33,7 +45,15 @@
 
     /* animations */
     transition: 0.3s;
+
+    -moz-animation: slide_down 0.5s forwards;
+    -webkit-animation: slide_down 0.5s forwards;
+    -o-animation: slide_down 0.5s forwards;
     animation: slide_down 0.5s forwards;
+
+    -moz-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
     animation-delay: 1.5s;
 }
 
@@ -45,7 +65,7 @@
     /* positioning */
     position: absolute;
     /*top: -425px;*/
-    right: -100px;
+    right: -150px;
     height: 225px;
     width: 135px;
     padding-top: 75px;
@@ -55,15 +75,37 @@
     display: none;
 
     /* animations */
+    -moz-animation-name: slide_out;
+    -webkit-animation-name: slide_out;
+    -o-animation-name: slide_out;
     animation-name: slide_out;
-    animation-duration: 0.5s;
+
+    -moz-animation-duration: 0.75s;
+    -webkit-animation-duration: 0.75s;
+    -o-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 .menu_visible {
     /* animations */
+    -moz-animation-name: slide_in;
+    -webkit-animation-name: slide_in;
+    -o-animation-name: slide_in;
     animation-name: slide_in;
-    animation-duration: 0.5s;
+
+    -moz-animation-duration: 0.75s;
+    -webkit-animation-duration: 0.75s;
+    -o-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 

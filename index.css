@@ -25,40 +25,14 @@
 }
 
 @keyframes slide {
-    100% {
-        left: 0%;
-    }
+    100% {left: 0%;}
 }
 
 @-webkit-keyframes {
-    100% {
-        left: 0%;
-    }
+    100% {left: 0%;}
 }
 
-.intro a {
-    color: rgb(100, 190, 121); 
-    filter:  brightness(1.5);
-    opacity: 1;
-    transition: 0.3s;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.intro a:hover {
-    opacity: 0.75;
-}
-
-/*.entire_bar {
-    width: 100%;
-}
-
-.load_bar {
-    width: 100%;
-    height: 5px;
-    background-color: rgb(100, 190, 121); 
-}*/
-
+/* intro section */
 .spine {
     /* positioning and framing */
     justify-content: flex-start;
@@ -67,9 +41,12 @@
     width: 3px;
     height: 100%;
     position: absolute;
-    left: -100%;
     background-color: rgb(100, 190, 121); 
+}
 
+.spine_intro_animation {
+    left: -100%;
+    
     -moz-animation: slide 0.5s forwards;
     -webkit-animation: slide 0.5s forwards;
     -o-animation: slide 0.5s forwards;
@@ -81,7 +58,7 @@
     animation-delay: 0.75s;
 }
 
-.spine:before {
+.spine::before {
     content: "";
     width: 3px;
     height: 3px;
@@ -102,7 +79,7 @@
     animation-delay: 0.75s;
 }
 
-.spine:after {
+.spine::after {
     content: "";
     width: 3px;
     height: 3px;
@@ -121,6 +98,19 @@
     -webkit-animation-delay: 0.75s;
     -o-animation-delay: 0.75s;
     animation-delay: 0.75s;
+}
+
+.intro a {
+    color: rgb(100, 190, 121); 
+    filter:  brightness(1.5);
+    opacity: 1;
+    transition: 0.3s;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.intro a:hover {
+    opacity: 0.75;
 }
 
 .intro_section {
@@ -205,139 +195,14 @@
     padding-right: 30px;
 }
 
-.about_link {
-    /* positioning */
-    position: absolute;
-    left: 25%;
-    top: 12.5rem;
-    width: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
 
-    /* styling */
-    border-style: solid;
-    border-width: 3;
-    border-color: rgb(100, 190, 121); 
 
-    opacity: 0;
-    -moz-animation: fade_in 0.75s forwards;
-    -webkit-animation: fade_in 0.75s forwards;
-    -o-animation: fade_in 0.75s forwards;
-    animation: fade_in 0.75s forwards;
-
-    -moz-animation-delay: 2.5s;
-    -webkit-animation-delay: 2.5s;
-    -o-animation-delay: 2.5s;
-    animation-delay: 2.5s;
-}
-
-.project_section {
-    /* positioning */
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 50px;
-    padding-right: 50px;
-
-    /* styling */
-    min-height: 75vh;
-    background-color: rgb(18, 20, 27); /* 23 */
-}
-
-.project_section h2 {
-    /* positioning */
+/* about section */
+.about {
     position: relative;
-    padding-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-
-    /* styling */
-    font-size: 42px;
-    letter-spacing: 3px;
-    text-align: center;
-}
-
-.row {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    /*background-color: yellow;*/
-} 
-
-.col {
-    /* positioning */
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-
-    /* dimensions */
-    margin-left: 25px;
-    margin-right: 25px;
-
-    /* styling */
-    text-align: center;
-}
-
-.col a {
-    color: white;
-    text-decoration: none;
-}
-
-.col img {
-    display: block;
-    height: auto;
-    width: 100%;
-}
-
-.col h2 {
-    font-size: 22px;
-    letter-spacing: 1.25px;
-}
-
-.container {
-    position: relative;
-}
-
-.overlay {
-    /* positioning */
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-
-    /* styling */
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgb(100, 190, 121); 
-    filter: brightness(1.5);
-}
-
-.container:hover .overlay {
-    /* opacity on hover */
-    opacity: 0.75;
-}
-
-.overlay p {
-    /* font styling */
-    font-weight: 600;
+    top: 40%;
+    left: 10%;
     letter-spacing: 1.5px;
-    text-align: center;
-    font-size: 2.5vw;
-
-    /* text styling */
-    margin: 0;
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    z-index: 99;
+    height: 265px;
 }

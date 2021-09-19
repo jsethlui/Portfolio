@@ -32,3 +32,26 @@ body {
     color: rgb(100, 190, 121);
     filter: brightness(1.5);
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    /*background-color: yellow;*/
+} 
+
+.col {
+    /* positioning */
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+
+    /* dimensions */
+    margin-left: 25px;
+    margin-right: 25px;
+
+    /* styling */
+    text-align: center;
+}
