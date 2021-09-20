@@ -73,6 +73,7 @@
     /* styling */
     text-align: right;
     display: none;
+    z-index: 98;
 
     /* animations */
     -moz-animation-name: slide_out;
