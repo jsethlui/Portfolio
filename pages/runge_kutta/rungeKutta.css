@@ -1,4 +1,22 @@
 
+.image1 {
+
+}
+
+.image2 {
+    /* positioning */
+    position: absolute;
+    top: 35%;
+    left: 25%;
+
+    /* dimensions */
+    width: auto;
+    height: 65%;
+
+    /* styling */
+    filter: brightness(0.7);
+}
+
 a {
     color: white;
     transition: 0.5s;
@@ -53,6 +71,7 @@ body {
 
 .row {
     font-size: 20px;
+    margin-top: 0px;
 }
 
 .col {
