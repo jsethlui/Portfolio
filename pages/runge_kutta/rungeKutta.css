@@ -1,20 +1,34 @@
 
-.image1 {
+.code_image {
+    /* positioning */
+    position: absolute;
+    top: 10%;
+    left: 5%;
 
+    /* dimensions */
+    width: auto;
+    height: 75%;
+
+    /* styling */
+    z-index: 0;
+    filter: brightness(0.67);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.image2 {
+.output_image {
     /* positioning */
     position: absolute;
     top: 35%;
-    left: 25%;
+    left: 38.5%;
 
     /* dimensions */
     width: auto;
     height: 65%;
 
     /* styling */
+    z-index: 1;
     filter: brightness(0.7);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 a {
