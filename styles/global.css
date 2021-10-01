@@ -1,9 +1,5 @@
 
 body {
-    /* dimensions */
-    margin: 0px;
-    height: 2000px;
-
     /* font styling */
     font-family: 'Darker Grotesque', sans-serif;
     font-weight: 500;
@@ -54,4 +50,9 @@ body {
 
     /* styling */
     text-align: center;
+}
+
+.gap {
+    position: relative;
+    height: 50px;
 }
