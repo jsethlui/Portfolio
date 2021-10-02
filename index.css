@@ -140,34 +140,32 @@ body {
 
 
 
-/* about section */
-.about {
-    /* positioning */
+/* body section */
+.body {
     position: relative;
+    height: 100%;
+    margin-left: 150px;
+    margin-right: 150px;
 
-    top: 40%;
-    left: 10%;
-    letter-spacing: 1.5px;
-    height: 530px;
-}
-
-.about h2 {
-    /* positioning */
-    margin-left: 40px;
-
-    /* styling */
-    font-size: 42px;
-    font-weight: 600;
-}
-
-.about p {
-    /* positioning */
-    margin-top: -15px;
-    margin-left: 40px;
-    margin-right: 265px;
-
-    /* styling */
     font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.5px;
+
+    /*background: yellow;*/
+}
+
+.about {
+    padding-top: 25px;
+}
+
+.about_col {
+    /* positioning */
+    padding: 15px;
+
+    /* styling */
+    border: 1.5px solid white;
+    border-radius: 15px;
+}
+
+.about_col p {
+
 }
