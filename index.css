@@ -157,6 +157,10 @@ body {
     padding-top: 25px;
 }
 
+.row {
+    padding-top: 40px;
+}
+
 .about_col {
     /* positioning */
     padding: 15px;
