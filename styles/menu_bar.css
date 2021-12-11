@@ -61,9 +61,13 @@
     opacity: 0.85;
 }
 
+.navigation_container button {
+    position: fixed;
+}
+
 .menu {
     /* positioning */
-    position: absolute;
+    position: fixed;
     /*top: -425px;*/
     right: -150px;
     height: 225px;
