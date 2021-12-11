@@ -64,10 +64,10 @@ body {
 .intro {
     position: absolute;
     display: flex;
-    top: 40%;
+    top: 35%;
     left: 10%;
     letter-spacing: 1.5px;
-    height: 265px;
+    height: 290px;
 }
 
 .greeting {
@@ -122,7 +122,7 @@ body {
 .external_links {
     position: absolute;
     left: 25%;
-    top: 12rem;
+    top: 14rem;
     width: 225%;
     font-size: 20px;
 

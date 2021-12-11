@@ -1,0 +1,138 @@
+
+:root {
+  /*--main-bg-color: brown;*/
+  --pane-height: 325px;
+  --pane-width: 150px;
+}
+
+.pane_wrapper {
+    /* positioning */
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    height: auto;
+    width: 100%;
+
+    /* debugging */
+    /*background: green;*/
+    /*opacity: 0.5;*/
+}
+
+.pane {
+    /* dimensions */
+    height: var(--pane-height);
+    width: var(--pane-width);
+
+    /* positions */
+    margin-left: 15px;
+    margin-right: 15px;
+    float: left;
+}
+
+.p1 {
+    background: red;
+}
+
+/* top circle */
+.p1::after {
+    /* dimensions */
+    content: "";
+    height: var(--pane-width);
+    width: var(--pane-width);
+    top: -75px;
+
+    /* positioning */
+    position: absolute;
+
+    /* styling */
+    background: inherit;
+    border-radius: 50%;
+}
+
+/* bottom circle */
+.p1::before {
+    /* dimensions */
+    content: "";
+    height: var(--pane-width);
+    width: var(--pane-width);
+    top: 250px;
+
+    /* positioning */
+    position: absolute;
+
+    /* styling */
+    background: inherit;
+    border-radius: 50%;
+}
+
+.p2 {
+    background: orange;
+}
+
+/* top circle */
+.p2::after {
+    /* dimensions */
+    content: "";
+    height: var(--pane-width);
+    width: var(--pane-width);
+    top: -75px;
+
+    /* positioning */
+    position: absolute;
+
+    /* styling */
+    background: inherit;
+    border-radius: 50%;
+}
+
+/* bottom circle */
+.p2::before {
+    /* dimensions */
+    content: "";
+    height: var(--pane-width);
+    width: var(--pane-width);
+    top: 250px;
+
+    /* positioning */
+    position: absolute;
+
+    /* styling */
+    background: inherit;
+    border-radius: 50%;
+}
+
+.p3 {
+    background: yellow;
+}
+
+/* top circle */
+.p3::after {
+    /* dimensions */
+    content: "";
+    height: var(--pane-width);
+    width: var(--pane-width);
+    top: -75px;
+
+    /* positioning */
+    position: absolute;
+
+    /* styling */
+    background: inherit;
+    border-radius: 50%;
+}
+
+/* bottom circle */
+.p3::before {
+    /* dimensions */
+    content: "";
+    height: var(--pane-width);
+    width: var(--pane-width);
+    top: 250px;
+
+    /* positioning */
+    position: absolute;
+
+    /* styling */
+    background: inherit;
+    border-radius: 50%;
+}
