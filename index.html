@@ -31,6 +31,7 @@
     <!-- scripts -->
     <script src="./index.js"></script>
     <script src="./scripts/menu_bar.js" async></script>
+    <script src="./scripts/cards.js" async></script>
 </head>
 <body>
     <nav class="navigation_container">
@@ -72,11 +73,44 @@
 
     <!-- body -->
     <section class="body">
-        <p> this is a test</p>
+        <div class="about_wrapper">
+            <h3>About Me</h3>
+            <div class="about_header_wrapper">
+                <p>Education</p>
+                <p>&#8226</p>
+                <p>Interests</p>
+                <p>&#8226</p>
+                <p>Hobbies</p>
+            </div>
+
+            <p class="about_content">My name is Jeremy, and I'm currently studying Mathematics of Computation at the University of California, Los Angeles (UCLA). I'm currently developing software needed to detect for water contaminants in refillable water stations under my faculty advisor, <a href="https://www.ioes.ucla.edu/person/eric-hoek/">Dr. Erik Hoek.</a> Check out my other previous experience as well:</p>
+
+            <div class="cards_wrapper">
+            <div class="cards" id="cards" onclick="toggleCards()">
+                <h4>Juni Learning</h4>
+                <div class="cards_view" id="cards_view">
+                    <ul>
+                        <li>item1</li>
+                        <li>item2</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cards">
+                <h4>Pocket Racers</h4>
+            </div>
+
+            <div class="cards">
+                <h4>Runge Kutta Method Analysis</h4>
+            </div>
+            </div>
+
+            <p class="about_content">While programming has given me many sleepless nights, it has also given rise to my coffee-obssession.</p>
+        </div>
     </section>
 
     <footer class="footer_wrapper">
-        <a href="https://github.com/jsethlui" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="uil uil-linkedin"></i></i></a>
+        <a href="https://www.linkedin.com/in/jeremylouie98/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="uil uil-linkedin"></i></i></a>
         <a href="https://github.com/jsethlui" target="_blank" rel="noopener noreferrer" title="Contact"><i class="uil uil-envelope"></i></a>
         <a href="https://github.com/jsethlui" target="_blank" rel="noopener noreferrer" title="Github"><i class="uil uil-github"></i></a>
     </footer>
