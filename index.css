@@ -59,7 +59,6 @@ body {
 .intro_section {
     /* positiong */
     min-height: 50rem;
-    background: green;
 }
 
 .intro {
@@ -152,25 +151,4 @@ body {
     letter-spacing: 1.5px;
 
     /*background: yellow;*/
-}
-
-.about {
-    padding-top: 25px;
-}
-
-.row {
-    padding-top: 40px;
-}
-
-.about_col {
-    /* positioning */
-    padding: 15px;
-
-    /* styling */
-    border: 1.5px solid white;
-    border-radius: 15px;
-}
-
-.about_col p {
-
 }
