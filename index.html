@@ -29,9 +29,7 @@
     <link rel="stylesheet" href="./styles/footer.css">
 
     <!-- scripts -->
-    <script src="./index.js"></script>
     <script src="./scripts/menu_bar.js" async></script>
-    <script src="./scripts/cards.js" async></script>
 </head>
 <body>
     <nav class="navigation_container">
@@ -42,7 +40,7 @@
             </span>
         </button>
         <div class="menu">
-            <a href="./#about">About</a>
+            <a href="./index.html#about">About</a>
             <a href="./#project">Projects</a>
             <a href="./#resume">Resume</a>
             <a href="./#contact">Contact</a>
@@ -71,8 +69,8 @@
         </div> -->
     </section>
 
-    <!-- body -->
-    <section class="body">
+    <!-- about me -->
+    <section class="body" id="about">
         <div class="about_wrapper">
             <h3>About Me</h3>
             <div class="about_header_wrapper">
@@ -83,29 +81,55 @@
                 <p>Hobbies</p>
             </div>
 
-            <p class="about_content">My name is Jeremy, and I'm currently studying Mathematics of Computation at the University of California, Los Angeles (UCLA). I'm currently developing software needed to detect for water contaminants in refillable water stations under my faculty advisor, <a href="https://www.ioes.ucla.edu/person/eric-hoek/">Dr. Erik Hoek.</a> Check out my other previous experience as well:</p>
+            <p class="about_content">My name is Jeremy, and I'm currently studying Mathematics of Computation at the University of California, Los Angeles (UCLA). I'm currently developing software needed to detect for water contaminants in refillable water stations under my faculty advisor, <a href="https://www.ioes.ucla.edu/person/eric-hoek/" target="_blank" rel="noopener noreferrer">Dr. Erik Hoek.</a> Check out my other previous experience as well:</p>
 
             <div class="cards_wrapper">
-            <div class="cards" id="cards" onclick="toggleCards()">
-                <h4>Juni Learning</h4>
-                <div class="cards_view" id="cards_view">
-                    <ul>
-                        <li>item1</li>
-                        <li>item2</li>
-                    </ul>
+                <div class="cards">
+                    <h4>Pocket Racers</h4>
+                    <h5>Website Developer & Researcher</h5>
+                    <h5>June 2021 to Present</h5>
+                    <div class="cards_points">
+                        <p>Reduced website maintainence costs by 100% by porting over from Squarespace to <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">Github Pages</a></p>
+                        <p>Implemented consensually tracked user data using <a href="https://developers.google.com/analytics/devguides/reporting/core/v4" target="_blank" rel="noopener noreferrer">Google Analytics Reporting API</a></p>
+                        <p>Ported over Robert Operating System (ROS) from Raspberry Pi to Jetson Xavier NX</p>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <h4>Juni Learning</h4>
+                    <h5>Computer Science Tutor</h5>
+                    <h5>Sept 2020 to August 2021</h5>
+                    <div class="cards_points">
+                        <p>Privately tutored students in courses ranging from <a href="https://junilearning.com/paths/coding/cpp-level-1/" target="_blank" rel="noopener noreferrer">Intro to C++</a> to <a href="https://junilearning.com/paths/coding/python-level-3/" target="_blank" rel="noopener noreferrer">Python Algorithms</a></p>
+                        <p>Provided student progress and learning assessment updates with parents on a daily basis</p>
+                        <p>Launched first-ever iOS Development Club to teach students about SwiftUI</p>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <h4>Runge Kutta Method Analysis</h4>
+                    <h5>Undergraduate Researcher</h5>
+                    <h5>Jan 2019 to July 2019</h5>
+                    <div class="cards_points">
+                        <p>Collaborated with (Honors) Linear Algebra & Differentials professor to compare variations of the <a href="https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods" target="_blank" rel="noopener noreferrer">4th Order Runge-Kutta methods</a> against different <a href="https://en.wikipedia.org/wiki/Ordinary_differential_equation" target="_blank" rel="noopener noreferrer">ODE's</a></p>
+                        <p>Developed Python algorithm that estimates and graphs two different ODE’s with at most 0.5% accuracy</p>
+                        <!-- <p>Successfully recognized as first student to accomplish Honors at highest level lower-division Mathematics</p> -->
+                    </div>
                 </div>
             </div>
 
-            <div class="cards">
-                <h4>Pocket Racers</h4>
-            </div>
+            <p class="about_content">While programming has given me many sleepless nights, it has also given rise to my coffee-obssession. Beyond that, I am also interested in all things <a href="https://en.wikipedia.org/wiki/Powerlifting" target="_blank" rel="noopener noreferrer">powerlifting.</a> In the future, I hope to not only enjoy different coffee beans from around the world but also to break some powerlifting state records.</p>
 
-            <div class="cards">
-                <h4>Runge Kutta Method Analysis</h4>
-            </div>
-            </div>
+            <p class="about_content">My interests lie in software development – whether it's Desktop or iOS – and I'm looking to learn something new everyday to step towards that.</p>
+        </div>
+    </section>
 
-            <p class="about_content">While programming has given me many sleepless nights, it has also given rise to my coffee-obssession.</p>
+    <div class="gap" style="height: 250px"></div>
+
+    <!-- projects -->
+    <section class="body">
+        <div class="projects_data">
+            <p>
         </div>
     </section>
 

@@ -36,10 +36,14 @@
     100% {height: 100%}
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* dimensions */
     margin: 0px;
-    height: 2000px;
+    height: 100%;
 }
 
 /* intro section */
@@ -143,7 +147,7 @@ body {
 /* about me section */
 .body {
     position: relative;
-    height: 100%;
+    /*height: 100%;*/
     margin-left: 150px;
     margin-right: 150px;
 
@@ -157,6 +161,7 @@ body {
     font-size: 30px;
     letter-spacing: 3px;
     font-size: 28px;
+    height: 100%;
 }
 
 .about_header_wrapper {
@@ -196,7 +201,7 @@ body {
 .cards_wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
 }
 
 .cards {
@@ -205,10 +210,12 @@ body {
     margin-left: 25px;
     margin-right: 25px;
 
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     font-size: 18px;
     text-align: center;
 
-    cursor: pointer;
     transition: 1s;
 
     background-color: rgb(22, 24, 27);
@@ -231,16 +238,56 @@ body {
     background-color: rgb(100, 190, 121);
 }
 
+/*.cards a {
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.cards a:hover {
+    opacity: 0.25;
+}*/
+
 .cards h4 {
-    letter-spacing: 2px;
+    font-size: 20px;
+    letter-spacing: 1.5x;
 
     margin-top: 0px;
     margin-bottom: 0px;
 
-    padding-top: 15px;
-    padding-bottom: 15px;
+    /*padding-top: 15px;*/
+    /*padding-bottom: 15px;*/
 }
 
-.cards ul {
+.cards h5 {
+    font-size: 18px;
+    /*color: rgb(162, 162, 162);*/
+    opacity: 0.425;
+    letter-spacing: 0.5px;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.cards_points {
     text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cards_points a {
+    color: rgb(100, 190, 121);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.cards_points a:hover {
+    opacity: 0.65;
+}
+
+.projects_data {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    background-color: yellow;
 }

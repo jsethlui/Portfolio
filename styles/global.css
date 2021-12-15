@@ -10,6 +10,12 @@ body {
     overflow-x: hidden;
 }
 
+.gap {
+    position: relative;
+    height: 100px;
+}
+
+
 .hamburger--stand {
     z-index: 99;
 }
