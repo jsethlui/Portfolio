@@ -157,24 +157,22 @@ body {
     /*background: yellow;*/
 }
 
-.about_wrapper h3 {
-    font-size: 30px;
-    letter-spacing: 3px;
-    font-size: 28px;
-    height: 100%;
+.project_wrapper {
+    margin-top: 25px;
 }
 
-.about_header_wrapper {
-    position: absolute;
-    top: 20px;
+.about_project_wrapper {
+    position: relative;
+    top: -35px;
     left: -5px;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    display: inline-flex;
 }
 
-.about_header_wrapper p {
+.about_project_wrapper p {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     padding-left: 5px;
     padding-right: 5px;
 
@@ -184,7 +182,8 @@ body {
 
 .about_content {
     position: relative;
-    margin-top: 50px;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 .about_content a {
@@ -269,25 +268,73 @@ body {
     margin-bottom: 0px;
 }
 
-.cards_points {
-    text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
+
+
+
+.data_wrapper {
+    position: relative;
+    height: 125px;
+    width: 100%;
+    background-color: rgb(39, 36, 43);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: top;
 }
 
-.cards_points a {
+.data {
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.project_number {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+.project_language {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.title_wrapper {
+    display: flex;
+}
+
+.location {
+    color: rgb(162, 162, 162);
+    margin-left: 50px;
+}
+
+.project_wrapper ul {
+    margin-top: -20px;
+}
+
+.project_wrapper li {
+    margin-bottom: 5px;
+}
+
+.project_wrapper a {
     color: rgb(100, 190, 121);
+    filter: brightness(1.5);
     text-decoration: none;
     transition: 1s;
 }
 
-.cards_points a:hover {
+.project_wrapper a:hover {
     opacity: 0.65;
 }
 
-.projects_data {
-    position: relative;
-    height: 150px;
-    width: 100%;
-    background-color: yellow;
+.experience_link {
+    color: white !important;
+    text-decoration: underline !important;
+    transition: 1s;
+}
+
+.experience_link:hover {
+    opacity: 0.5;
 }

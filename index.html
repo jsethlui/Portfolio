@@ -9,9 +9,12 @@
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport"/>
     <title>Jeremy Louie</title>
 
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
     <!-- icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
@@ -71,52 +74,39 @@
 
     <!-- about me -->
     <section class="body" id="about">
-        <div class="about_wrapper">
+        <div class="project_wrapper">
             <h3>About Me</h3>
-            <div class="about_header_wrapper">
+            <div class="about_project_wrapper">
                 <p>Education</p>
                 <p>&#8226</p>
                 <p>Interests</p>
                 <p>&#8226</p>
                 <p>Hobbies</p>
             </div>
-
-            <p class="about_content">My name is Jeremy, and I'm currently studying Mathematics of Computation at the University of California, Los Angeles (UCLA). I'm currently developing software needed to detect for water contaminants in refillable water stations under my faculty advisor, <a href="https://www.ioes.ucla.edu/person/eric-hoek/" target="_blank" rel="noopener noreferrer">Dr. Erik Hoek.</a> Check out my other previous experience as well:</p>
+            
+            <p class="about_content">My name is Jeremy, and I'm currently studying Mathematics of Computation at the University of California, Los Angeles (UCLA). I'm currently developing software needed to detect for water contaminants in refillable water stations under my faculty advisor, <a href="https://www.ioes.ucla.edu/person/eric-hoek/" target="_blank" rel="noopener noreferrer">Dr. Erik Hoek.</a> Feel free to check out the places I've work at before as well:</p>
 
             <div class="cards_wrapper">
                 <div class="cards">
                     <h4>Pocket Racers</h4>
                     <h5>Website Developer & Researcher</h5>
                     <h5>June 2021 to Present</h5>
-                    <div class="cards_points">
-                        <p>Reduced website maintainence costs by 100% by porting over from Squarespace to <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">Github Pages</a></p>
-                        <p>Implemented consensually tracked user data using <a href="https://developers.google.com/analytics/devguides/reporting/core/v4" target="_blank" rel="noopener noreferrer">Google Analytics Reporting API</a></p>
-                        <p>Ported over Robert Operating System (ROS) from Raspberry Pi to Jetson Xavier NX</p>
-                    </div>
                 </div>
 
                 <div class="cards">
                     <h4>Juni Learning</h4>
                     <h5>Computer Science Tutor</h5>
                     <h5>Sept 2020 to August 2021</h5>
-                    <div class="cards_points">
-                        <p>Privately tutored students in courses ranging from <a href="https://junilearning.com/paths/coding/cpp-level-1/" target="_blank" rel="noopener noreferrer">Intro to C++</a> to <a href="https://junilearning.com/paths/coding/python-level-3/" target="_blank" rel="noopener noreferrer">Python Algorithms</a></p>
-                        <p>Provided student progress and learning assessment updates with parents on a daily basis</p>
-                        <p>Launched first-ever iOS Development Club to teach students about SwiftUI</p>
-                    </div>
                 </div>
 
                 <div class="cards">
                     <h4>Runge Kutta Method Analysis</h4>
                     <h5>Undergraduate Researcher</h5>
                     <h5>Jan 2019 to July 2019</h5>
-                    <div class="cards_points">
-                        <p>Collaborated with (Honors) Linear Algebra & Differentials professor to compare variations of the <a href="https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods" target="_blank" rel="noopener noreferrer">4th Order Runge-Kutta methods</a> against different <a href="https://en.wikipedia.org/wiki/Ordinary_differential_equation" target="_blank" rel="noopener noreferrer">ODE's</a></p>
-                        <p>Developed Python algorithm that estimates and graphs two different ODE’s with at most 0.5% accuracy</p>
-                        <!-- <p>Successfully recognized as first student to accomplish Honors at highest level lower-division Mathematics</p> -->
-                    </div>
                 </div>
             </div>
+
+            <div class="gap" style="height: 25px"></div>
 
             <p class="about_content">While programming has given me many sleepless nights, it has also given rise to my coffee-obssession. Beyond that, I am also interested in all things <a href="https://en.wikipedia.org/wiki/Powerlifting" target="_blank" rel="noopener noreferrer">powerlifting.</a> In the future, I hope to not only enjoy different coffee beans from around the world but also to break some powerlifting state records.</p>
 
@@ -128,10 +118,119 @@
 
     <!-- projects -->
     <section class="body">
-        <div class="projects_data">
-            <p>
+        <div class="data_wrapper">
+            <div class="data">
+                <!-- runga kutta, digitalCurrency.py -->
+                <p class="project_number">2</p>
+                <p class="project_language">Python Projects</p>
+            </div>
+
+            <div class="data">
+                <!-- PocketRacers -->
+                <p class="project_number">1</p>
+                <p class="project_language">C++ Project</p>
+            </div>
+
+            <div class="data">
+                <p class="project_number">1</p>
+                <p class="project_language">1 Swift Project</p>
+            </div>
         </div>
+
+        <!-- smart water -->
+        <div class="project_wrapper">
+            <div class="title_wrapper">
+                <!-- <a href="https://scaledautonomousracing.github.io/PocketRacer/" class="experience_link" target="_blank" rel="noopener noreferrer"><h3>Smart Water Filter @ UCLA</h3></a> -->
+                <h3>Smart Water Filter @ UCLA</h3>
+                <h3 class="location">Los Angeles, CA</h3>
+            </div>
+            <div class="about_project_wrapper">
+                <p>Undergraduate Researcher</p>
+                <p>&#8226</p>
+                <p>November 2021 to Present</p>
+            </div>
+            <ul>
+                <li>Ported data collection scripts from Python2 to Python3</li>
+                <li>Implemented Python script to upload CSV data to <a href="https://firebase.google.com/docs/database" target="_blank" rel="noopener noreferrer">Google Firebase Realtime Database</a></li>
+            </ul>
+        </div>
+
+        <!-- math / cs lab -->
+        <div class="project_wrapper">
+            <div class="title_wrapper">
+<!--                 <a href="https://scaledautonomousracing.github.io/PocketRacer/" class="experience_link" target="_blank" rel="noopener noreferrer"><h3>Program in Computing (PIC) Computer @ UCLA</h3></a> -->
+                <h3>Program in Computing (PIC) Computer @ UCLA</h3>
+                <h3 class="location">Los Angeles, CA</h3>
+            </div>
+            <div class="about_project_wrapper">
+                <p>Computer Lab Assistant</p>
+                <p>&#8226</p>
+                <p>November 2021 to Present</p>
+            </div>
+            <ul>
+                <li>Oversaw computer science lab duties through opening / closing procedures and ensuring general cleanliness</li>
+                <li>Offered programming / technical / debugging support to computer science students</li>
+            </ul>
+        </div>
+
+        <!-- pocket racers -->
+        <div class="project_wrapper">
+            <div class="title_wrapper">
+                <a href="https://scaledautonomousracing.github.io/PocketRacer/" class="experience_link" target="_blank" rel="noopener noreferrer"><h3>Pocket Racers</h3></a>
+                <h3 class="location">San Francisco, CA</h3>
+            </div>
+            <div class="about_project_wrapper">
+                <p>Website Developer & Researcher</p>
+                <p>&#8226</p>
+                <p>June 2021 to Present</p>
+            </div>
+            <ul>
+                <li>Reduced website maintainence costs by 100% by porting over from Squarespace to <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">Github Pages</a></li>
+                <li>Implemented consensually tracked user data using <a href="https://developers.google.com/analytics/devguides/reporting/core/v4" target="_blank" rel="noopener noreferrer">Google Analytics Reporting API</a></li>
+                <li>Ported over Robert Operating System (ROS) from Raspberry Pi to Jetson Xavier NX</li>
+                <li>Investigated <a href="https://ieeexplore.ieee.org/document/9304147" target="_blank" rel="noopener noreferrer">Bayesian Optimization racing line</a> methods to calculate the shortest time traversed for an autonomous self-driving RC car</li>
+            </ul>
+        </div>
+
+        <!-- juni learning -->
+        <div class="project_wrapper">
+            <div class="title_wrapper">
+                <a href="https://junilearning.com/" class="experience_link" target="_blank" rel="noopener noreferrer"><h3>Juni Learning</h3></a>
+                <h3 class="location">Los Angeles, CA (Remote)</h3>
+            </div>
+            <div class="about_project_wrapper">
+                <p>Computer Science Tutor</p>
+                <p>&#8226</p>
+                <p>September 2020 August 2021</p>
+            </div>
+            <ul>
+                <li>Privately tutored students in courses ranging from <a href="https://junilearning.com/paths/coding/cpp-level-1/" target="_blank" rel="noopener noreferrer">Intro to C++</a> to <a href="https://junilearning.com/paths/coding/python-level-3/" target="_blank" rel="noopener noreferrer">Python Algorithms</a></li>
+                <li>Provided student progress and learning assessment updates with parents on a daily basis</li>
+                <li>Launched first-ever iOS Development Club to teach students about SwiftUI</li>
+            </ul>
+        </div>
+
+        <!-- runge kutta method -->
+        <div class="project_wrapper">
+            <div class="title_wrapper">
+                <a href="https://github.com/jsethlui/What-is-the-best-Runge-Kutta-Method-/blob/main/4th_Order_Runge_Kutta_Method_Analysis.ipynb" class="experience_link" target="_blank" rel="noopener noreferrer"><h3>Analysis on 4th Order Runge Kutta Method</h3></a>
+                <h3 class="location">San Francisco, CA</h3>
+            </div>
+            <div class="about_project_wrapper">
+                <p>Undergraduate Researcher</p>
+                <p>&#8226</p>
+                <p>January 2019 July 2019</p>
+            </div>
+            <ul>
+                <li>Collaborated with (Honors) Linear Algebra & Differentials professor to compare variations of the <a href="https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods" target="_blank" rel="noopener noreferrer">4th Order Runge-Kutta methods</a> against different <a href="https://en.wikipedia.org/wiki/Ordinary_differential_equation" target="_blank" rel="noopener noreferrer">ODE's</a></li>
+                <li>Developed <a href="https://github.com/jsethlui/What-is-the-best-Runge-Kutta-Method-/blob/main/4th_Order_Runge_Kutta_Method_Analysis.ipynb" target="_blank" rel="noopener noreferrer">Python algorithm</a> that estimates and graphs two different ODE’s with at most 0.5% accuracy</li>
+                <li>Successfully recognized as first student to accomplish Honors at highest level lower-division Mathematics</li>
+            </ul>
+        </div>
+
     </section>
+
+    <div class="gap" style="height: 250px"></div>
 
     <footer class="footer_wrapper">
         <a href="https://www.linkedin.com/in/jeremylouie98/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="uil uil-linkedin"></i></i></a>
