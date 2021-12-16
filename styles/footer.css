@@ -2,6 +2,7 @@
 .footer_wrapper {
     position: relative;
     height: 100px;
+    padding-bottom: 35px;
     background: rgb(20, 22, 25);
     display: flex;
     justify-content: center;
@@ -20,3 +21,25 @@
 .footer_wrapper a:hover {
     opacity: 0.5;
 }   
+
+.credit {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0ppx;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.credit a {
+    font-size: 16px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.credit a:hover {
+    opacity: 0.75;
+}
