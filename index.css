@@ -237,30 +237,16 @@ body {
     background-color: rgb(100, 190, 121);
 }
 
-/*.cards a {
-    color: white;
-    text-decoration: none;
-    transition: 1s;
-}
-
-.cards a:hover {
-    opacity: 0.25;
-}*/
-
 .cards h4 {
     font-size: 20px;
     letter-spacing: 1.5x;
 
     margin-top: 0px;
     margin-bottom: 0px;
-
-    /*padding-top: 15px;*/
-    /*padding-bottom: 15px;*/
 }
 
 .cards h5 {
     font-size: 18px;
-    /*color: rgb(162, 162, 162);*/
     opacity: 0.425;
     letter-spacing: 0.5px;
 
@@ -268,6 +254,19 @@ body {
     margin-bottom: 0px;
 }
 
+
+
+.education_span {
+    padding : 30px;
+    background: rgb(100, 190, 121); 
+    filter: brightness(1.5);
+
+    color : white;
+    font-size : 1.2em;
+    font-variant : small-caps;
+    cursor : pointer;
+    display: block;
+}
 
 
 
