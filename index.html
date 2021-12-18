@@ -27,12 +27,13 @@
     <link rel="stylesheet" href="./styles/scrollbar.css">
     <link rel="stylesheet" href="./styles/spine.css">
     <link rel="stylesheet" href="./styles/global.css">
-
     <link rel="stylesheet" href="./styles/windows.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/collapsible.css">
 
     <!-- scripts -->
     <script src="./scripts/menu_bar.js" async></script>
+    <script src="./scripts/collapsible.js" async></script>
 </head>
 <body>
     <nav class="navigation_container">
@@ -100,7 +101,7 @@
                 </div>
 
                 <div class="cards">
-                    <h4>Runge Kutta Method Analysis</h4>
+                    <h4>Runge-Kutta Method Analysis</h4>
                     <h5>Undergraduate Researcher</h5>
                     <h5>Jan 2019 to July 2019</h5>
                 </div>
@@ -122,10 +123,156 @@
         <div class="about_project_wrapper">
             <p>Honors</p>
             <p>&#8226</p>
-            <p>Extracurriculars</p>
-            <p>&#8226</p>
             <p>Organizations</p>
+            <p>&#8226</p>
+            <p>Coursework</p>
         </div>
+
+        <!-- ucla -->
+        <button type="button" class="collapsible active">University of California, Los Angeles</button>
+        <div class="content" style="max-height: 500px;">
+            <div class="major_year_wrapper">
+                <p>Mathematics of Computation</p>
+                <p style="padding-left: 10px; padding-right: 10px;">&#8226</p>
+                <p>September 2019 to March 2022</p>
+            </div>
+            <ul>
+                <li><a href="https://acabruins.org/" target="_blank" rel="noopener noreferrer">Association of Chinese Americans</a></li>
+                <li><a href="https://www.uclaacm.com/" target="_blank" rel="noopener noreferrer">Association for Computing Machinery @ UCLA</a></li>
+                <li><a href="https://ucladevx.com/" target="_blank" rel="noopener noreferrer">DevX</a></li>
+            </ul>
+
+            <!-- coursework cards -->
+            <div class="row">
+                <div class="col">
+                    <div class="coursework_card">
+                        <i class="uil uil-desktop"></i>
+                        <p>COM SCI 111</p>
+                        <p>Operating Systems</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="coursework_card">
+                        <i class="uil uil-desktop"></i>
+                        <p>COM SCI 35L</p>
+                        <p>Software Lab Construction</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="coursework_card">
+                        <i class="uil uil-desktop"></i>
+                        <p>COM SCI 32</p>
+                        <p>Computer Architecture</p>
+                    </div>
+                </div>             
+            </div>
+
+            <div class="gap" style="height: 25px"></div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="coursework_card">
+                        <i class="uil uil-desktop"></i>
+                        <p>PIC 10C</p>
+                        <p>Advanced Programming</p>
+                    </div>
+                </div> 
+
+                <div class="col">
+                    <div class="coursework_card">
+                        <i class="uil uil-calculator"></i>
+                        <p>MATH 182</p>
+                        <p>Algorithms</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="coursework_card">
+                        <i class="uil uil-calculator"></i>
+                        <p>MATH 151A</p>
+                        <p>Applied Numerical Methods</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gap" style="height: 25px"></div>
+        </div>
+
+        <div class="gap" style="height: 75px"></div>
+
+        <!-- ccsf -->
+        <button type="button" class="collapsible">City College of San Francisco</button>
+        <div class="content">
+            <div class="major_year_wrapper">
+                <p>Computer Science</p>
+                <p style="padding-left: 10px; padding-right: 10px;">&#8226</p>
+                <p>August 2017 to June 2019</p>
+            </div>
+            <ul>
+                <li><a href="https://www.ccsf.edu/academics/honors-program" target="_blank" rel="noopener noreferrer">Honors Program</a></li>
+                <li><a href="https://twitter.com/ccsfgroup" target="_blank" rel="noopener noreferrer">Salesforce Group</a></li>
+            </ul>
+
+            <div class="row">
+                <div class="col">
+                    <div class="coursework_card">
+                        <i class="uil uil-desktop"></i>
+                        <p>PHIL 12A</p>
+                        <p>Symbolic Logic</p>
+                    </div>
+                </div> 
+
+                <div class="col">
+                    <div class="coursework_card">
+                        <i class="uil uil-calculator"></i>
+                        <p>CS 131A</p>
+                        <p>Python Programming</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="coursework_card">
+                        <i class="uil uil-calculator"></i>
+                        <p>CS 111A</p>
+                        <p>Intro to Programming: Java (Honors)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gap" style="height: 25px"></div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="coursework_card">
+                        <i class="uil uil-desktop"></i>
+                        <p>MATH 115</p>
+                        <p>Discrete Mathematics (Honors)</p>
+                    </div>
+                </div> 
+
+                <div class="col">
+                    <div class="coursework_card">
+                        <i class="uil uil-calculator"></i>
+                        <p>CS 110C</p>
+                        <p>Data Structures & Algorithms: C++</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="coursework_card">
+                        <i class="uil uil-calculator"></i>
+                        <p>MATH 130</p>
+                        <p>Linear Alg & Diff Equations (Honors)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gap" style="height: 25px"></div>
+
+        </div>
+
     </section>
 
     <div class="gap" style="height: 250px"></div>
@@ -227,7 +374,7 @@
         <!-- runge kutta method -->
         <div class="project_wrapper">
             <div class="title_wrapper">
-                <a href="https://github.com/jsethlui/What-is-the-best-Runge-Kutta-Method-/blob/main/4th_Order_Runge_Kutta_Method_Analysis.ipynb" class="experience_link" target="_blank" rel="noopener noreferrer"><h3>Analysis on 4th Order Runge Kutta Method</h3></a>
+                <a href="https://github.com/jsethlui/What-is-the-best-Runge-Kutta-Method-/blob/main/4th_Order_Runge_Kutta_Method_Analysis.ipynb" class="experience_link" target="_blank" rel="noopener noreferrer"><h3>Analysis on 4th Order Runge-Kutta Method</h3></a>
                 <h3 class="location">San Francisco, CA</h3>
             </div>
             <div class="about_project_wrapper">
