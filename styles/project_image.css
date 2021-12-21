@@ -1,0 +1,80 @@
+
+.project_image_wrapper {
+    height: 250px;
+    width: 500px;
+    background: rgb(100, 190, 121);
+    filter: brightness(1.5);
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img {
+    position: absolute;
+    filter: brightness(0.7) drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.runge_kutta_img1 {
+    height: 85%;
+    width: auto;
+
+    bottom: 10%;
+    left: 5%;
+}
+
+.runge_kutta_img2 {
+    height: 85%;
+    width: auto;
+
+    bottom: 0px;
+    left: 45%;
+}
+
+.pocket_racers_img1 {
+    height: 75%;
+    width: auto;
+
+    top: 0%;
+    left: 2.5%;    
+}
+
+.pocket_racers_img2 {
+    height: 65%;
+    width: auto;
+
+    bottom: 0%;
+    left: 30%;    
+}
+
+.overlay_image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #008CBA;
+}
+
+.project_image_wrapper:hover .overlay_image {
+  opacity: 0.75;
+}
+
+.overlay_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 24px;
+    color: white;
+
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

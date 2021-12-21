@@ -30,10 +30,11 @@
     <link rel="stylesheet" href="./styles/windows.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/collapsible.css">
+    <link rel="stylesheet" href="./styles/project_image.css">
 
     <!-- scripts -->
     <script src="./scripts/menu_bar.js" defer></script>
-    <script src="./scripts/collapsible.js" async></script>
+    <script src="./scripts/collapsible.js" defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J16KSKRCYB"></script>
@@ -294,7 +295,6 @@
             <p>Research</p>
             <p>&#8226</p>
             <p>Software Development</p>
-
         </div>
         <div class="data_wrapper">
             <div class="data">
@@ -311,7 +311,6 @@
         <!-- smart water -->
         <div class="project_wrapper">
             <div class="title_wrapper">
-                <!-- <a href="https://scaledautonomousracing.github.io/PocketRacer/" class="experience_link" target="_blank" rel="noopener noreferrer"><h3>Smart Water Filter @ UCLA</h3></a> -->
                 <h3>Smart Water Filter @ UCLA</h3>
                 <h3 class="location">Los Angeles, CA</h3>
             </div>
@@ -329,7 +328,6 @@
         <!-- math / cs lab -->
         <div class="project_wrapper">
             <div class="title_wrapper">
-<!--                 <a href="https://scaledautonomousracing.github.io/PocketRacer/" class="experience_link" target="_blank" rel="noopener noreferrer"><h3>Program in Computing (PIC) Computer @ UCLA</h3></a> -->
                 <h3>Program in Computing (PIC) Computer @ UCLA</h3>
                 <h3 class="location">Los Angeles, CA</h3>
             </div>
@@ -398,7 +396,48 @@
                 <li>Successfully recognized as first student to accomplish Honors at highest level lower-division Mathematics</li>
             </ul>
         </div>
+    </section>
 
+    <div class="gap" style="height: 250px"></div>
+
+    <section class="body" id="Featured Projects">
+        <h3>Featured Projects</h3>
+        <div class="about_project_wrapper">
+            <p>Mathematics Analysis</p>
+            <p>&#8226</p>
+            <p>Website Design</p>
+        </div>
+        <div class="row">
+            <!-- runge kutta -->
+            <div class="col">
+                <h3>Analysis on 4th Order Runge-Kutta Method</h3>
+                <a href="./index.html">
+                    <div class="project_image_wrapper">
+                        <img class="img runge_kutta_img1" src="./assets/runge_kutta/img1.png" alt="img1">
+                        <img class="img runge_kutta_img2" src="./assets/runge_kutta/img2.png" alt="img2">
+                        <div class="overlay_image">
+                            <div class="overlay_text">The Programming Behind Analyzing ODE's</div>
+                        </div>
+                    </div>
+                </a>
+                <p>I sought analyze two different variations of the 4th Order Runge-Kutta Method, and use both to estimate two different Ordinary Differential Equations. My goal was to determine if there existed a superior 4th Order Runge-Kutta Method.</p>
+            </div>
+
+            <!-- pocket racers -->
+            <div class="col">
+                <h3>Pocket Racers</h3>
+                <a href="./index.html">
+                    <div class="project_image_wrapper">
+                        <img class="img pocket_racers_img1" src="./assets/pocket_racers/img1.png" alt="img1">
+                        <img class="img pocket_racers_img2" src="./assets/pocket_racers/img2.png" alt="img2">
+                        <div class="overlay_image">
+                            <div class="overlay_text">The Implementation Behind Website Design</div>
+                        </div>
+                    </div>
+                </a>
+                <p>Pocket Racers surrounds making self-driving automotive technology not only fun but also accessible. In order to achieve that, I constructed a website (from scratch) and ported over the Robot Operating System (ROS) from a Raspberry Pi to a Jetson Xavier NX</p>
+            </div>
+        </div>
     </section>
 
     <div class="gap" style="height: 250px"></div>
