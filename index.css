@@ -157,6 +157,17 @@ body {
     /*background: yellow;*/
 }
 
+.body a {
+    color: rgb(100, 190, 121);
+    filter:  brightness(1.5);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.body a:hover {
+    opacity: 0.75;
+}
+
 .project_wrapper {
     margin-top: 25px;
 }

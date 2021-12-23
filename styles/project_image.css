@@ -1,9 +1,9 @@
 
 .project_image_wrapper {
     height: 250px;
-    width: 500px;
-    background: rgb(100, 190, 121);
-    filter: brightness(1.5);
+    width: 100%;
+    background-color: rgb(100, 190, 121);
+    /*filter: brightness(1.5);*/
 
     display: block;
     margin-left: auto;
@@ -12,7 +12,7 @@
 
 .img {
     position: absolute;
-    filter: brightness(0.7) drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+    filter: brightness(0.65) drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
 .runge_kutta_img1 {
@@ -27,7 +27,7 @@
     height: 85%;
     width: auto;
 
-    bottom: 0px;
+    bottom: 2.5%;
     left: 45%;
 }
 
@@ -35,7 +35,7 @@
     height: 75%;
     width: auto;
 
-    top: 0%;
+    top: 2.5%;
     left: 2.5%;    
 }
 
@@ -43,7 +43,7 @@
     height: 65%;
     width: auto;
 
-    bottom: 0%;
+    bottom: 1.5%;
     left: 30%;    
 }
 
