@@ -16,32 +16,40 @@
 }
 
 .runge_kutta_img1 {
-    height: 85%;
-    width: auto;
+    /*height: 85%;*/
+    /*width: auto;*/
+    max-height: 85%;
+    max-width: 85%;
 
     bottom: 10%;
     left: 5%;
 }
 
 .runge_kutta_img2 {
-    height: 85%;
-    width: auto;
+    /*height: 85%;*/
+    /*width: auto;*/
+    max-height: 85%;
+    max-width: 85%;
 
     bottom: 2.5%;
     left: 45%;
 }
 
 .pocket_racers_img1 {
-    height: 75%;
-    width: auto;
+    /*height: 75%;*/
+    /*width: auto;*/
+    max-height: 75%;
+    max-width: 75%;
 
     top: 2.5%;
     left: 2.5%;    
 }
 
 .pocket_racers_img2 {
-    height: 65%;
-    width: auto;
+/*    height: 65%;
+    width: auto;*/
+    max-height: 65%;
+    max-width: 65%;
 
     bottom: 1.5%;
     left: 30%;    
