@@ -1,0 +1,129 @@
+
+.map_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    height: 500px;
+    width: 500px;
+}
+
+h3 {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+
+.location_wrapper {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.location_wrapper p {
+    letter-spacing: 1.5px;
+}
+
+.contact_info {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.contact_info p {
+    text-align: left;
+}
+
+.contact {
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: -5px;
+}
+
+.rotating_car_image {
+    width: 75%;
+    height: auto;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_label {
+    padding-bottom: 4px;
+    text-align: left;
+}
+
+.contact_input {
+    margin-bottom: 8px;
+}
+
+.file_upload {
+    /* positioning */
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+    /* font styling */
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+.submission_successful {
+    opacity: 0;
+
+    -moz-animation: fade_in_out 2s linear;
+    -webkit-animation: fade_in_out 2s linear;
+    -o-animation: fade_in_out 2s linear;
+    animation: fade_in_out 2s linear;
+
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+#email {
+    height: 32px;
+}
+
+#subject {
+    height: 32px;
+}
+
+#message {
+    height: 160px;
+    margin-bottom: 12px;
+}
+
+#submit {
+    /* dimensions of submit button*/
+    width: 100px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-right: auto;
+    padding-left: auto;
+
+    /* styling */
+    font-family: "Darker Grotesque", sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    background-color: #121212;
+    border-radius: 4px;
+}
+
+textarea {
+    /* font styling */
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}

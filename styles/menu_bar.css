@@ -96,6 +96,30 @@
     animation-fill-mode: forwards;
 }
 
+.menu a {
+    /* positioning */
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-left: auto;
+    padding-bottom: 0px;
+    display: block;
+
+    /* styling */
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+
+    /* animation */
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    opacity: 0.75;
+}
+
+
 .menu_visible {
     /* animations */
     -moz-animation-name: slide_in;
@@ -112,25 +136,4 @@
     -webkit-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-}
-
-.menu a {
-    /* positioning */
-    padding-top: 25px;
-    padding-right: 15px;
-    display: block;
-
-    /* styling */
-    color: white;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-decoration: none;
-
-    /* animation */
-    transition: 0.5s;
-}
-
-.menu a:hover {
-    opacity: 0.75;
 }

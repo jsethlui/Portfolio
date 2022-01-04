@@ -20,17 +20,15 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./styles/water_drops.css">
-    <link rel="stylesheet" href="./styles/navigation_bar.css">
     <link rel="stylesheet" href="./styles/hamburgers.css">
     <link rel="stylesheet" href="./styles/menu_bar.css">
     <link rel="stylesheet" href="./styles/scrollbar.css">
     <link rel="stylesheet" href="./styles/spine.css">
     <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/windows.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/collapsible.css">
     <link rel="stylesheet" href="./styles/project_image.css">
+    <link rel="stylesheet" href="./mobile_support/ios.css">
 
     <!-- scripts -->
     <script src="./scripts/menu_bar.js" defer></script>
@@ -59,7 +57,8 @@
             <a href="./index.html#Education">Education</a>
             <a href="./index.html#Experience">Experience</a>
             <a href="./index.html#Featured_Projects">Featured Projects</a>
-            <a href="./#contact">Contact</a>
+            <a href="#">Blog</a>
+           <a href="./pages/contact/contact.html">Contact</a>
         </div>
     </nav>
 
@@ -69,7 +68,6 @@
             <div class="spine spine_slide_out_animation" id="spine"></div>
             <p class="greeting greeting1">Hello! My name is</p>
             <h5 class="greeting greeting2"><a href="https://www.linkedin.com/in/jeremylouie98/" target="_blank" rel="noopener noreferrer">Jeremy Louie</a></h5>
-            <!-- <p class="greeting greeting3">I'm currently researching <a href="https://scaledautonomousracing.github.io/PocketRacer/" target="_blank" rel="noopener noreferrer">autonomous radio control cars</a> for racing purposes</p> -->
             <p class="greeting greeting3">I'm currently building software to detect for water contaminants in refillable water stations</p>
             <div class="greeting external_links">
                 <a href="https://www.linkedin.com/in/jeremylouie98/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="uil uil-linkedin"></i></a>
@@ -145,8 +143,12 @@
         <div class="content">
             <div class="major_year_wrapper">
                 <p>Mathematics of Computation</p>
-                <p style="padding-left: 10px; padding-right: 10px;">&#8226</p>
+                <p style="padding-left: 10px; padding-right: 10px;" id="bullet">&#8226</p>
                 <p>September 2019 to March 2022</p>
+            </div>
+            <div class="major_year_wrapper_mobile">
+                <p>Mathematics of Computation</p>
+                <p style="font-size: 16px; padding-bottom: 15px">September 2019 to March 2022</p>
             </div>
             <ul>
                 <li><a href="https://acabruins.org/" target="_blank" rel="noopener noreferrer">Association of Chinese Americans</a></li>
@@ -221,6 +223,10 @@
                 <p>Computer Science</p>
                 <p style="padding-left: 10px; padding-right: 10px;">&#8226</p>
                 <p>August 2017 to June 2019</p>
+            </div>
+             <div class="major_year_wrapper_mobile">
+                <p>Computer Science</p>
+                <p style="font-size: 16px; padding-bottom: 15px">August 2017 to June 2019</p>
             </div>
             <ul>
                 <li><a href="https://www.ccsf.edu/academics/honors-program" target="_blank" rel="noopener noreferrer">Honors Program</a></li>
@@ -297,7 +303,7 @@
             <p>&#8226</p>
             <p>Software Development</p>
         </div>
-        <div class="data_wrapper">
+<!--         <div class="data_wrapper">
             <div class="data">
                 <p class="project_number">3</p>
                 <p class="project_language">Researching Positions</p>
@@ -307,7 +313,7 @@
                 <p class="project_number">2</p>
                 <p class="project_language">Technical Experience Positions</p>
             </div>
-        </div>
+        </div> -->
 
         <!-- smart water -->
         <div class="project_wrapper">
@@ -444,14 +450,14 @@
     <div class="gap" style="height: 150px"></div>
 
     <section class="body">
-        <p style="text-align: center;">If you're interested in connecting, feel free to <a href="./contact.html" target="_blank" rel="noopener noreferrer">reach out</a> and let's get in touch! If interested, feel free to also check out my most recent programming project on my <a href="#">programming blog.</a></p>
+        <p style="text-align: center;">If you're interested in connecting, feel free to <a href="./pages/contact/contact.html" target="_blank" rel="noopener noreferrer">reach out</a> and let's get in touch! If interested, feel free to also check out my most recent programming project on my <a href="#">programming blog.</a></p>
     </section>
 
     <div class="gap" style="height: 250px"></div>
 
     <footer class="footer_wrapper">
         <a href="https://www.linkedin.com/in/jeremylouie98/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="uil uil-linkedin"></i></i></a>
-        <a href="https://github.com/jsethlui" target="_blank" rel="noopener noreferrer" title="Contact"><i class="uil uil-envelope"></i></a>
+        <a href="./pages/contact/contact.html" target="_blank" rel="noopener noreferrer" title="Contact"><i class="uil uil-envelope"></i></a>
         <a href="https://github.com/jsethlui" target="_blank" rel="noopener noreferrer" title="Github"><i class="uil uil-github"></i></a>
         <p class="credit">Website Developed by Jeremy Louie<br><a href="https://github.com/jsethlui/Portfolio" target="_blank" rel="noopener noreferrer">[Code]</a></p>
     </footer>

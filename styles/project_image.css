@@ -16,8 +16,6 @@
 }
 
 .runge_kutta_img1 {
-    /*height: 85%;*/
-    /*width: auto;*/
     max-height: 85%;
     max-width: 85%;
 
@@ -26,8 +24,6 @@
 }
 
 .runge_kutta_img2 {
-    /*height: 85%;*/
-    /*width: auto;*/
     max-height: 85%;
     max-width: 85%;
 
@@ -36,13 +32,12 @@
 }
 
 .pocket_racers_img1 {
-    /*height: 75%;*/
-    /*width: auto;*/
     max-height: 75%;
+    /*max-height: auto;*/
     max-width: 75%;
 
     top: 2.5%;
-    left: 2.5%;    
+    left: 2.5%;
 }
 
 .pocket_racers_img2 {
@@ -52,7 +47,7 @@
     max-width: 65%;
 
     bottom: 1.5%;
-    left: 30%;    
+    right: 15%;    
 }
 
 .overlay_image {
@@ -66,7 +61,7 @@
 
     opacity: 0;
     transition: 1s ease;
-    background-color: #008CBA;
+    background-color: rgb(162, 162, 162);
 }
 
 .project_image_wrapper:hover .overlay_image {

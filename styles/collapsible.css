@@ -17,7 +17,7 @@
     transition: 0.25s;
 }
 
-.collapsible:after {
+.collapsible::after {
     content: "\002B";
     float: right;
     margin-left: 5px;
@@ -27,11 +27,11 @@
     font-weight: bold;
 }
 
-.active:after {
+.active::after {
     content: "\2212";
 }
 
-.active, .collapsible:hover {
+.active, .collapsible::hover {
     background-color: rgb(142, 142, 142);
 }
 
